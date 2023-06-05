@@ -109,7 +109,7 @@ export const getCustomTabs = () => {
       <div
         className="runtime-keep-alive-tabs-layout"
         hidden={!isKeep}
-        style={{ height: '40px', marginBottom: '12px' }}
+        style={{ height: '40px', marginBottom: '12px', padding: '0 20px' }}
       >
         <Tabs
           tabBarExtraContent={

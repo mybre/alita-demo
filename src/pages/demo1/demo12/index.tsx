@@ -1,3 +1,8 @@
+import { PageContainer } from "@ant-design/pro-components";
 export default () => {
-  return <div>demo12</div>;
+  return (
+    <PageContainer header={{title: ''}}>
+      demo11
+    </PageContainer>
+  )
 };

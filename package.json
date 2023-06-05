@@ -13,12 +13,13 @@
   },
   "dependencies": {
     "@alita/flow": "^3.1.1",
+    "@ant-design/icons": "^5.1.4",
+    "@ant-design/pro-components": "^2.5.5",
+    "@emotion/css": "^11.11.0",
     "alita": "^3.2.27",
     "antd": "^4.21.10",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@ant-design/pro-components": "^2.5.5",
-    "@ant-design/icons": "^5.1.4"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5",
