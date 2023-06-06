@@ -1,25 +1,12 @@
 import {
-  GithubFilled,
-  InfoCircleFilled,
-  LogoutOutlined,
-  QuestionCircleFilled,
-} from '@ant-design/icons';
-import type { ProSettings } from '@ant-design/pro-components';
-import {
-  PageContainer,
-  ProCard,
   ProConfigProvider,
   ProLayout,
-  SettingDrawer,
 } from '@ant-design/pro-components';
 import {
-  Button,
   ConfigProvider,
-  Dropdown,
 } from 'antd';
-import React, { useState } from 'react';
 import routes from '@/routes';
-import { Link, useKeepOutlets, useLocation, history } from 'alita';
+import { Link, useKeepOutlets, useLocation } from 'alita';
 
 
 export default () => {
@@ -82,45 +69,10 @@ export default () => {
               path: '/',
               routes,
             }}
-
             menuItemRender={MenuItem}
-            avatarProps={{
-              src: 'https://gw.alipayobjects.com/zos/antfincdn/efFD%24IOql2/weixintupian_20170331104822.jpg',
-              size: 'small',
-              title: '七妮妮',
-              render: (props, dom) => {
-                return (
-                  <Dropdown
-                    menu={{
-                      items: [
-                        {
-                          key: 'logout',
-                          icon: <LogoutOutlined />,
-                          label: '退出登录',
-                        },
-                      ],
-                    }}
-                  >
-                    {dom}
-                  </Dropdown>
-                );
-              },
-            }}
-            actionsRender={(props) => {
-              if (props.isMobile) return [];
-              if (typeof window === 'undefined') return [];
-              return [
-                <InfoCircleFilled key="InfoCircleFilled" />,
-                <QuestionCircleFilled key="QuestionCircleFilled" />,
-                // <GithubFilled key="GithubFilled" />,
-              ];
-            }}
-
             onMenuHeaderClick={(e) => console.log(e)}
           >
-
             {element}
-
           </ProLayout>
         </ConfigProvider>
       </ProConfigProvider>

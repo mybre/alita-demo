@@ -13,7 +13,7 @@ export default () => (
     <Button
       type={'link'}
       onClick={() => {
-        history.push('/users');
+        history.push('/user/login');
       }}
     >
       Hello Alita

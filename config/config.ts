@@ -5,7 +5,7 @@ export default defineConfig({
   appType: 'pc',
   keepalive: [],
   aconsole: {
-    console: {},
+    // console: {},
     inspx: {},
   },
   mfsu: {},
